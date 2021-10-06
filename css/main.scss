@@ -1,0 +1,27 @@
+@import "header";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  min-height: 100vh;
+  background-image: linear-gradient(rgb(25, 44, 102), rgb(57, 132, 202));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+h2 {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
