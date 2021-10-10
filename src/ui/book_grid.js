@@ -20,7 +20,7 @@ const updateGridItems = (arrayOfBooks) => {
 const createBookItem = (book) => {
 
   //text elements
-  const title = book.volumeInfo.title
+  const title = book.volumeInfo.title ?? ""
   const h2Element = document.createElement('h2')
   h2Element.innerText = title
   h2Element.classList.add("card__title")
@@ -30,13 +30,13 @@ const createBookItem = (book) => {
   h3Element.innerText = author
   h3Element.classList.add("card__author")
 
-  const description = book.volumeInfo.description
+  const description = book.volumeInfo.description ?? ""
   const h4Element = document.createElement('h4')
   h4Element.innerText = prepareDescription(description)
   h4Element.classList.add("card__description")
 
   //image element
-  const image = book.volumeInfo.imageLinks?.thumbnail
+  const image = book.volumeInfo.imageLinks?.thumbnail ?? "assets/generic_book.png"
   const imageElement = document.createElement('img')
   imageElement.src = image
 
@@ -71,7 +71,7 @@ const prepareDescription = (description) => {
       return description
     }
   } else {
-    return ''
+    return 'Description unavailable.'
   }
 
 
