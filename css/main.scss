@@ -1,0 +1,33 @@
+@import "header.scss";
+@import "search.scss";
+@import "grid.scss";
+@import "card.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  min-height: 100vh;
+  background-image: linear-gradient(rgb(25, 44, 102), rgb(57, 132, 202));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Arial", sans-serif;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+
+
+@media only screen and (min-width: 1280px) {
+  body {
+    max-width: 100%;
+  }
+}

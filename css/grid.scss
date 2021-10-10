@@ -1,0 +1,16 @@
+#grid {
+  display: flex;
+  flex-direction: column;
+  height: 370px;
+}
+
+
+@media only screen and (min-width: 1280px) {
+
+  #grid {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+}
