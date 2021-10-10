@@ -1,36 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Google Book Search</title>
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <div class="screen">
-      <header>
-        <h2>Google Books Client</h2>
-      </header>
-      <div class="search">
-        <input
-          type="text"
-          name="search"
-          id="search"
-          placeholder="Search by title, author or category"
-        />
-        <button onclick=""><img src="assets/search_glass.png" alt="" /></button>
-      </div>
-    </div>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Book Search</title>
+    <link rel="stylesheet" href="css/main.css"/>
 
-    <div class="grid">
-      <div class="item">
-        <div class="text">
-          <h2>Born a Crime: Stories from a South African Childhood</h2>
-          <h3>Trevor Noah</h3>
-          <h4>Here is the story behind one of the most remarkable Internet successes of our...</h4>
-        </div>
-        <div class="image">
-        </div>
-      </div>
+</head>
+<body>
+<div class="screen">
+    <header>
+        <h2>Book Search Client</h2>
+    </header>
+    <div class="search">
+        <input
+                type="text"
+                name="search"
+                id="search"
+                placeholder="Search by title, author or category"
+        />
+        <button onclick=""><img src="assets/search_glass.png" alt=""/></button>
     </div>
-  </body>
+</div>
+
+<div id="grid"></div>
+</body>
+
+<script src="./src/ui/book_grid.js"></script>
 </html>

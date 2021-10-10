@@ -1,6 +1,6 @@
-@import "header";
-@import "search";
-@import "grid";
+@import "header.scss";
+@import "search.scss";
+@import "grid.scss";
 
 * {
   margin: 0;
@@ -23,6 +23,9 @@ body {
   width: 100%;
 }
 
+.search{
+  margin-top: 80px;
+ }
 h2 {
   font-size: 35px;
   margin-bottom: 15px;

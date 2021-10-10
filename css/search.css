@@ -3,30 +3,24 @@
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
-  width: 100%;
-}
-.search input, .search button {
-  font-size: 30px;
-  margin-top: 50px;
-  margin-bottom: 20px;
-  height: 90px;
-  width: 70%;
-  text-align: center;
-  align-items: center;
-  border-radius: 45px;
-  border: 2px solid black;
-  background-color: white;
-}
-.search button {
-  width: 140px;
-  height: 140px;
-  border-radius: 90px;
-  margin-left: -240px;
-  margin-top: 25px;
-}
-.search img {
-  height: 50px;
-  margin-top: 3px;
-}
-
-/*# sourceMappingURL=search.css.map */
+  width: 100%; }
+  .search input, .search button {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    height: 90px;
+    width: 70%;
+    text-align: center;
+    align-items: center;
+    border-radius: 45px;
+    border: 2px solid black;
+    background-color: white; }
+  .search button {
+    width: 140px;
+    height: 140px;
+    border-radius: 90px;
+    margin-left: -240px;
+    margin-top: 25px; }
+  .search img {
+    height: 50px;
+    margin-top: 3px; }
