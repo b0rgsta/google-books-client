@@ -1,13 +1,15 @@
 /**
  *
- * @param { (query: string) => void } listener function to run when user presses search button
+ * @param { (query: string) => void } callback function which runs when user clicks on search button
  */
-export const setUpSearchListener = (listener) => {
-  //add a listener to search button and inside the function =>
+export const setUpSearchListener = (callback) => {
+  //adds a listener to the search button
   document
     .getElementById('search-button')
     .addEventListener("click", function () {
+      // gets value from search bar
       const searchText = document.getElementById('search').value
-      listener(searchText)
+      // passes the search text to whomever called the function
+      callback(searchText)
     })
 }
