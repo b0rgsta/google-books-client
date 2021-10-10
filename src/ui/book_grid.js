@@ -3,7 +3,7 @@
  * @param arrayOfBooks
  */
 export const updateGridItems = (arrayOfBooks) => {
-  //goes through an array and creates a new array with the book items
+  //goes through an array and creates a new array with book items
   const bookItems = arrayOfBooks.map((book) => {
     return createBookItem(book)
   })
@@ -14,16 +14,20 @@ export const updateGridItems = (arrayOfBooks) => {
   //removes all children from grid
   gridElement.innerHTML = ""
 
-  //goes through item array and appends each element to the grid
+  //goes through item array and appends each new element to the grid
   bookItems.forEach((item) => {
     gridElement.appendChild(item)
   })
 }
 
-//this function takes a book and puts it into an html div element.
+/**
+ * //this function takes a single book item and puts it into an html div element.
+ * @param book
+ * @returns {HTMLDivElement}
+ */
 const createBookItem = (book) => {
 
-  //text elements
+  //creates card text elements
   const title = book.volumeInfo.title ?? ""
   const h2Element = document.createElement('h2')
   h2Element.innerText = title
@@ -39,23 +43,23 @@ const createBookItem = (book) => {
   h4Element.innerText = prepareDescription(description)
   h4Element.classList.add("card__description")
 
-  //image element
+  //creates card image element
   const image = book.volumeInfo.imageLinks?.thumbnail ?? "assets/generic_book.png"
   const imageElement = document.createElement('img')
   imageElement.src = image
 
-//main card block
+//creates main card block
   const card = document.createElement('div')
   card.classList.add("card")
 
-  //card elements
+  //creates card elements
   const bookText = document.createElement('div')
   bookText.classList.add("card__text")
   const bookImage = document.createElement('div')
   bookImage.classList.add("card__image")
   bookImage.appendChild(imageElement)
 
-//appends text elements to bookText div
+//appends text elements to text div
   bookText.appendChild(h2Element)
   bookText.appendChild(h3Element)
   bookText.appendChild(h4Element)
@@ -67,7 +71,7 @@ const createBookItem = (book) => {
   return card
 }
 
-//function that limits description char length and adds placeholder for empty description.
+//function that limits description char length or adds placeholder if description is empty.
 const prepareDescription = (description) => {
   if (description) {
     if (description.length > 115) {
