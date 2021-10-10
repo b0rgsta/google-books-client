@@ -4,27 +4,30 @@
   justify-content: space-evenly;
   flex-direction: row;
   width: 100%; }
-  .search .search__input, .search .search__button {
-    font-size: 30px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    height: 90px;
-    width: 70%;
-    text-align: center;
-    align-items: center;
-    border-radius: 45px;
-    border: 2px solid black;
-    background-color: white; }
-  .search .search__button {
-    width: 140px;
-    height: 140px;
-    border-radius: 90px;
-    margin-left: -240px;
-    margin-top: 25px; }
-  .search .search__img {
-    height: 50px;
-    margin-top: 3px; }
+
+.search__input, .search__button {
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  height: 90px;
+  width: 70%;
+  text-align: center;
+  align-items: center;
+  border-radius: 45px;
+  border: 2px solid black;
+  background-color: white; }
+
+.search__button {
+  width: 140px;
+  height: 140px;
+  border-radius: 90px;
+  margin-left: -240px;
+  margin-top: 25px; }
+
+.search__img {
+  height: 50px;
+  margin-top: 3px; }
 
 @media only screen and (min-width: 1280px) {
-  .search .search__button {
+  .search__button {
     margin-left: -290px; } }
