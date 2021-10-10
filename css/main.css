@@ -1,12 +1,12 @@
 header {
   width: 100%;
   height: 90px;
-  background-color: darkgray;
+  background-color: darkgrey;
   position: fixed;
   text-align: center;
   align-items: center;
   line-height: 90px; }
-  header h2 {
+  header .header__title {
     color: black;
     font-size: 50px; }
 
@@ -16,35 +16,44 @@ header {
   justify-content: space-evenly;
   flex-direction: row;
   width: 100%; }
-  .search .search__input, .search .search__button {
-    font-size: 30px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    height: 90px;
-    width: 70%;
-    text-align: center;
-    align-items: center;
-    border-radius: 45px;
-    border: 2px solid black;
-    background-color: white; }
-  .search .search__button {
-    width: 140px;
-    height: 140px;
-    border-radius: 90px;
-    margin-left: -240px;
-    margin-top: 25px; }
-  .search .search__img {
-    height: 50px;
-    margin-top: 3px; }
+
+.search__input, .search__button {
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  height: 90px;
+  width: 70%;
+  text-align: center;
+  align-items: center;
+  border-radius: 45px;
+  border: 2px solid black;
+  background-color: white; }
+
+.search__button {
+  width: 140px;
+  height: 140px;
+  border-radius: 90px;
+  margin-left: -240px;
+  margin-top: 25px; }
+
+.search__img {
+  height: 50px;
+  margin-top: 3px; }
 
 @media only screen and (min-width: 1280px) {
-  .search .search__button {
+  .search__button {
     margin-left: -290px; } }
 
 #grid {
   display: flex;
   flex-direction: column;
   height: 370px; }
+
+@media only screen and (min-width: 1280px) {
+  #grid {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap; } }
 
 .card {
   align-items: center;
@@ -63,33 +72,33 @@ header {
   text-align: center; }
 
 .card__title {
+  font-size: 45px;
+  margin-bottom: 15px;
   max-width: 95%; }
 
 .card__author {
+  font-size: 30px;
+  margin-bottom: 20px;
   font-weight: lighter;
-  width: 80%; }
+  width: 95%; }
 
 .card__description {
+  font-size: 28px;
+  color: lightgrey;
   max-width: 90%;
-  font-weight: lighter; }
+  font-weight: normal; }
 
 @media only screen and (min-width: 1280px) {
-  body {
-    max-width: 100%; }
+  .card {
+    width: 27%;
+    display: flex;
+    flex-direction: row; }
   .card__title {
     font-size: 30px; }
   .card__author {
     font-size: 25px; }
   .card__description {
-    font-size: 20px; }
-  #grid {
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap; }
-  .card {
-    width: 27%;
-    display: flex;
-    flex-direction: row; } }
+    font-size: 20px; } }
 
 * {
   margin: 0;
@@ -100,7 +109,8 @@ body {
   min-height: 100vh;
   background-image: linear-gradient(#192c66, #3984ca);
   background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  font-family: "Arial", sans-serif; }
 
 .screen {
   display: flex;
@@ -108,17 +118,6 @@ body {
   align-items: center;
   width: 100%; }
 
-.search {
-  margin-top: 80px; }
-
-h2 {
-  font-size: 35px;
-  margin-bottom: 15px; }
-
-h3 {
-  font-size: 30px;
-  margin-bottom: 20px; }
-
-h4 {
-  font-size: 25px;
-  color: lightgrey; }
+@media only screen and (min-width: 1280px) {
+  body {
+    max-width: 100%; } }

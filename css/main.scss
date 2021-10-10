@@ -1,6 +1,7 @@
 @import "header.scss";
 @import "search.scss";
 @import "grid.scss";
+@import "card.scss";
 
 * {
   margin: 0;
@@ -13,7 +14,7 @@ body {
   background-image: linear-gradient(rgb(25, 44, 102), rgb(57, 132, 202));
   background-repeat: no-repeat;
   background-attachment: fixed;
-
+  font-family: "Arial", sans-serif;
 }
 
 .screen {
@@ -23,21 +24,10 @@ body {
   width: 100%;
 }
 
-.search{
-  margin-top: 80px;
- }
-h2 {
-  font-size: 35px;
-  margin-bottom: 15px;
-}
 
-h3 {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-h4 {
-  font-size: 25px;
-  color: lightgrey;
 
+@media only screen and (min-width: 1280px) {
+  body {
+    max-width: 100%;
+  }
 }
-

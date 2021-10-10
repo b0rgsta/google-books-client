@@ -3,47 +3,8 @@
   flex-direction: column;
   height: 370px; }
 
-.card {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  border-bottom: 2px solid #FFFFFF33;
-  padding: 20px 50px 30px;
-  min-height: 250px; }
-
-.card__text {
-  width: 90%; }
-
-.card__image {
-  display: flex;
-  text-align: center; }
-
-.card__title {
-  max-width: 95%; }
-
-.card__author {
-  font-weight: lighter;
-  width: 80%; }
-
-.card__description {
-  max-width: 90%;
-  font-weight: lighter; }
-
 @media only screen and (min-width: 1280px) {
-  body {
-    max-width: 100%; }
-  .card__title {
-    font-size: 30px; }
-  .card__author {
-    font-size: 25px; }
-  .card__description {
-    font-size: 20px; }
   #grid {
     flex-direction: row;
     justify-content: space-around;
-    flex-wrap: wrap; }
-  .card {
-    width: 27%;
-    display: flex;
-    flex-direction: row; } }
+    flex-wrap: wrap; } }
